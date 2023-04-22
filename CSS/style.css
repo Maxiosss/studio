@@ -1,0 +1,176 @@
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden; 
+}
+ body{
+    font-family: 'Roboto', sans-serif; 
+    font-style: normal;
+ }
+.logo-link{
+    font-family: 'Raleway', sans-serif; 
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+color: #212121;
+text-decoration: none;
+}
+.web{
+    color: #2196F3;
+}
+.nav-list{
+    list-style-type: none;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.15;
+letter-spacing: 0.02em;
+}
+.nav-list a{
+    text-decoration: none;
+    color: #212121;
+}
+
+.nav-list a:hover {
+    color: #2196F3;
+}
+.contact-list {
+    font-weight: 500;
+font-size: 14px;
+line-height: 1.15;
+letter-spacing: 0.02em;
+list-style-type: none;
+}
+.contact-list a{
+    text-decoration: none;
+    color: #757575;
+}
+.contact-list a:hover{
+    color: #2196F3;
+}
+.hero {
+    width: 1600px;
+height: 600px;
+    background-color: #2F303A;
+}
+.hero-title {
+    font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.hero-btn{
+    width: 152px;
+height: 30px;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+}
+.features-subtitle{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.15;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;
+}
+.features-paragraf {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: #757575;
+}
+.features-list li{
+    list-style-type: none;
+}
+/* Секція Чим ми займаємося */
+.images img{
+    width: 370px;
+    height: 294px;
+}
+.our-skills{
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+.images li{
+    list-style-type: none;
+}
+/* Секція Наша команда */
+.our-team{
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.17px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+.team li {
+list-style-type: none;
+}
+.people {
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.19px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+.team img{
+    width: 270px;
+    height: 260px;
+}
+.team p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.19px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
+}
+.team div{ 
+    background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+width: 270px; 
+height: 368px 
+} 
+.logo{
+    font-family: 'Raleway', sans-serif; 
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+color:  #FFFFFF;
+text-decoration: none;
+}
+.address{
+    width: 1600px;
+height: 252px;
+    background: #2F303A;
+}
+.street{
+    font-weight: 400;
+    font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
