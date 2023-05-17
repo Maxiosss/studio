@@ -12,7 +12,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
 }
-h1,
 ul {
   margin: 0;
   padding: 0;
@@ -22,35 +21,31 @@ ul {
   margin: 0 auto;
   background-color: #ffffff;
 }
-
+/* header */
+.header{
+  width: 1600px;
+}
 .header-wrapper {
-  display: flex;
-  justify-content: center;
+  width: 1200px;
   height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav-menu {
   display: flex;
   justify-content: space-between;
-}
-.nav-list {
-  display: flex;
-  justify-content: space-between;
-  width: 281px;
-  margin: 32px 373px 32px 93px;
+  align-items: center;
+  width: 520px;
 }
 .contacts {
   display: flex;
+  width: 307px;
   justify-content: space-between;
-}
-.contact-list {
-  display: flex;
-  justify-content: space-between;
-  margin: 32px 215px 32px 0;
-  width: 310px;
+  align-items: center;
 }
 .logo-link {
-  display: flex;
-  margin: 24px 93px 25px 215px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -58,12 +53,15 @@ ul {
   letter-spacing: 0.03em;
   color: #212121;
   text-decoration: none;
-  width: 145px;
 }
 .web {
   color: #2196f3;
+  padding-top: 24px;
 }
 .nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 281px;
   list-style-type: none;
   font-weight: 500;
   font-size: 14px;
@@ -78,27 +76,48 @@ ul {
 .nav-list a:hover {
   color: #2196f3;
 }
-.contact-list {
+.tel{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
   list-style-type: none;
 }
-.contact-list a {
+.mail{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+}
+.contacts a:hover{
+  color:#2196f3
+}
+.tel{
+  text-decoration: none;
+  color: #757575;
+}
+.mail{
   text-decoration: none;
   color: #757575;
 }
 .contact-list a:hover {
   color: #2196f3;
 }
+.header-wrapper a:focus{
+  color: #2196f3;
+}
+/* end of header */
+/* hero */
 .hero {
   width: 1600px;
   height: 600px;
   background-color: #2f303a;
 }
 .hero h1{
-    padding: 200px 452px 30px 452px;
+  padding-top: 200px;
+  padding-left: 452px;
+  padding-right: 452px;
 }
 .hero-title {
   font-weight: 900;
@@ -110,7 +129,7 @@ ul {
   color: #ffffff;
 }
 .hero button{
-    margin: 30px 692px 200px 692px;
+  margin: 30px 692px 200px 692px;
 }
 .hero-btn {
   margin: 0 auto;
@@ -126,31 +145,23 @@ ul {
   letter-spacing: 0.06em;
   color: #ffffff;
 }
+/* end of hero */
+/* main */
 .features-list {
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px;
-  margin: 94px 215px;
+  width: 1200px;
+  padding-bottom: 94px;
+  padding-top: 120px;
+  margin-left: 215px;
 }
-.images {
-  display: flex;
-  justify-content: space-between;
-}
-.works {
-  margin: 94px 215px 115px 215px;
-}
-.us {
-  width: 1600px;
-  height: 648px;
-}
-.team {
-  display: flex;
-  margin: 186px 215px 94px 215px;
-  justify-content: space-between;
+.features-list-item{
+  width: 270px;
 }
 .features-subtitle {
   font-weight: 700;
   font-size: 14px;
+  margin-bottom: 10px;
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -167,10 +178,13 @@ ul {
   list-style-type: none;
 }
 /* Секція Чим ми займаємося */
+.works {
+  width: 1200px;
+  margin-left: 215px;
+  margin-bottom: 94px;
+}
 .images img {
   width: 370px;
-  height: 294px;
-  padding-right: 30px;
 }
 .our-skills {
   font-weight: 700;
@@ -179,9 +193,15 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 .images li {
   list-style-type: none;
+}
+.images {
+  display: flex;
+  justify-content: space-between;
 }
 /* Секція Наша команда */
 .our-team {
@@ -190,14 +210,27 @@ ul {
   line-height: 1.17px;
   text-align: center;
   letter-spacing: 0.03em;
+  padding: 94px 215px 50px 215px;
   color: #212121;
+}
+.us {
+  width: 1600px;
+  height: 648px;
+  background-color:  #F5F4FA;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  height: 368px;
+  margin: 50px 215px 94px 215px;
 }
 .team li {
   list-style-type: none;
 }
 .people-1 {
   font-weight: 500;
-  margin: 30px 70px 10px 70px;
+  margin: 30px 0 10px 0;
   font-size: 16px;
   line-height: 1.19px;
   text-align: center;
@@ -206,7 +239,7 @@ ul {
 }
 .people-2 {
   font-weight: 500;
-  margin: 30px 83px 10px 83px;
+  margin: 30px 0 10px 0;
   font-size: 16px;
   line-height: 1.19px;
   text-align: center;
@@ -215,7 +248,7 @@ ul {
 }
 .people-3 {
   font-weight: 500;
-  margin: 30px 60px 10px 60px;
+  margin: 30px 0 10px 0;
   font-size: 16px;
   line-height: 1.19px;
   text-align: center;
@@ -224,12 +257,16 @@ ul {
 }
 .people-4 {
   font-weight: 500;
-  margin: 30px 60px 10px 60px;
+  margin: 30px 0 10px 0;
   font-size: 16px;
   line-height: 1.19px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+.education{
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 .team img {
   width: 270px;
@@ -251,6 +288,10 @@ ul {
   width: 270px;
   height: 368px;
 }
+/* footer */
+.footer{
+  width: 1600px;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -265,14 +306,22 @@ ul {
   height: 252px;
   background: #2f303a;
 }
-.street {
+.address-footer{
   display: flex;
-  margin: 20px 1154px 9px 215px;
+  flex-direction: column;
+  width: 231px;
+  margin-left: 215px;
+}
+.street {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  padding-bottom: 9px;
   color: #ffffff;
+}
+.tel-item{
+  padding-top: 9px;
 }
 .footer-wrapper {
   display: flex;
@@ -283,10 +332,6 @@ ul {
   margin: 60px 1240px 20px 215px;
 }
 .contact-footer {
-  display: flex;
-  flex-direction: column;
-  margin: 20px 1154px 60px 215px;
-  width: 231px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -297,6 +342,12 @@ ul {
   text-decoration: none;
   color: #757575;
 }
-.contact-footer a:hover {
+.address-footer a:hover {
+  color: #2196f3;
+}
+.address-footer a:focus{
+  color: #2196f3;
+}
+.footer-wrapper a:focus{
   color: #2196f3;
 }
