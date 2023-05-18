@@ -238,11 +238,11 @@ color: #757575;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   color: #ffffff;
 }
 .tel-item{
-  padding-top: 9px;
+  margin-top: 9px;
 }
 .footer-wrapper {
   display: flex;
