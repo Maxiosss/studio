@@ -116,7 +116,12 @@ ul {
 .hero {
   width: 1600px;
   height: 600px;
-  background-color: #2f303a;
+  background-color:#2F303A; 
+}
+.cont-of-hero{
+  width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4 )40%,#000000),url(font/new_photo.jpg);
 }
 .hero h1{
   padding-top: 200px;
