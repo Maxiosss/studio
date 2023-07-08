@@ -110,7 +110,8 @@ fill: rgba(117, 117, 117, 1);
 /* hero */
 .hero {
   width: 1600px;
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color:#2F303A;
   background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url("/studio/font/new_photo.jpg");
   background-position: center;
@@ -118,9 +119,7 @@ fill: rgba(117, 117, 117, 1);
   background-size: cover;
 }
 .hero h1{
-  padding-top: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
@@ -131,18 +130,17 @@ fill: rgba(117, 117, 117, 1);
   text-transform: uppercase;
   color: #ffffff;
 }
-.hero button{
-  margin: 30px 692px 200px 692px;
-}
 .hero-btn {
   width: 216px;
   height: 50px;
+  margin: 0 auto;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
+  display: block;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -151,7 +149,11 @@ fill: rgba(117, 117, 117, 1);
 /* main */
 .features{
   width: 1200px;
-  margin: 94px 215px 118px 215px;
+  margin: 0 auto;
+}
+.perevagy{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .features-icons-all{
   display: flex;
@@ -233,6 +235,7 @@ background: #F5F4FA;
 }
 /* Секція Наша команда */
 .our-team {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17px;
@@ -242,31 +245,28 @@ background: #F5F4FA;
 }
 .us {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
   background-color:  #F5F4FA;
 }
 .team {
   display: flex;
   justify-content: space-between;
   width: 1200px;
-  margin: 50px 215px 94px 215px;
+  margin:0 auto;
 }
 .people {
   font-weight: 500;
-  margin: 30px 0 10px 0;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.19px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
-.education{
-  padding-top: 10px;
-  padding-bottom: 30px;
-}
 .team img {
   width: 270px;
   height: 260px;
+  margin-bottom: 30px;
 }
 .team p {
   font-weight: 400;
@@ -317,13 +317,15 @@ background: #F5F4FA;
   background-color: #2196F3;
 }
 /* Постійні клієнти */
+.regular-customers{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .customers{
   display: flex;
   justify-content: space-between;
   margin-left: 215px;
   width: 1200px;
-  padding-top: 50px;
-  padding-bottom: 94px;
 }
 .logo{
   width: 106px;
@@ -352,10 +354,10 @@ border: 1px solid #AFB1B8;
 }
 .customers-title{
   color: #212121;
-  margin: 94px 650px 0 650px;
 text-align: center;
 font-size: 36px;
 font-weight: 700;
+margin-bottom: 50px;
 letter-spacing: 1.08px;
 }
 .logo{
