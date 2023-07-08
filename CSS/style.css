@@ -160,25 +160,21 @@ fill: rgba(117, 117, 117, 1);
 }
 .features-list-icons-1{
   width: 270px;
-  height: 120px;
   border-radius: 4px;
 background: #F5F4FA;
 }
 .features-list-icons-2{
   width: 270px;
-  height: 120px;
   border-radius: 4px;
 background: #F5F4FA;
 }
 .features-list-icons-3{
   width: 270px;
-  height: 120px;
   border-radius: 4px;
 background: #F5F4FA;
 }
 .features-list-icons-4{
   width: 270px;
-  height: 120px;
   border-radius: 4px;
 background: #F5F4FA;
 }
@@ -242,19 +238,17 @@ background: #F5F4FA;
   line-height: 1.17px;
   text-align: center;
   letter-spacing: 0.03em;
-  padding: 94px 215px 50px 215px;
   color: #212121;
 }
 .us {
-  width: 1600px;
-  height: 648px;
+  padding-top: 94px;
+  padding-bottom: 50px;
   background-color:  #F5F4FA;
 }
 .team {
   display: flex;
   justify-content: space-between;
   width: 1200px;
-  height: 368px;
   margin: 50px 215px 94px 215px;
 }
 .people {
@@ -282,13 +276,12 @@ background: #F5F4FA;
   letter-spacing: 0.03em;
   color: #757575;
 }
-.team div {
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+.card{
+  background-color: #FFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
-  height: 428px;
   padding-bottom: 30px;
 }
 .links{
@@ -327,8 +320,10 @@ background: #F5F4FA;
 .customers{
   display: flex;
   justify-content: space-between;
+  margin-left: 215px;
   width: 1200px;
-  margin: 50px 215px 94px 215px;
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 .logo{
   width: 106px;
