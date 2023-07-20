@@ -81,6 +81,19 @@ fill: rgba(117, 117, 117, 1);
   line-height: 1.15;
   letter-spacing: 0.02em;
 }
+.nav-list-link-h:hover::after{
+  position: absolute;
+  top: 45px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+background-color: #2196F3;
+}
+.nav-list-item{
+  position: relative;
+}
 .nav-list a {
   text-decoration: none;
   color: #212121;
@@ -160,22 +173,7 @@ fill: rgba(117, 117, 117, 1);
   justify-content: space-between;
   width: 1200px;
 }
-.features-list-icons-1{
-  width: 270px;
-  border-radius: 4px;
-background: #F5F4FA;
-}
-.features-list-icons-2{
-  width: 270px;
-  border-radius: 4px;
-background: #F5F4FA;
-}
-.features-list-icons-3{
-  width: 270px;
-  border-radius: 4px;
-background: #F5F4FA;
-}
-.features-list-icons-4{
+.features-list-icons:nth-child(n){
   width: 270px;
   border-radius: 4px;
 background: #F5F4FA;
@@ -216,9 +214,6 @@ background: #F5F4FA;
   margin-left: 215px;
   margin-bottom: 94px;
 }
-.images img {
-  width: 370px;
-}
 .our-skills {
   font-weight: 700;
   font-size: 36px;
@@ -232,8 +227,59 @@ background: #F5F4FA;
 .images {
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+.thumb:nth-child(n)::after{
+  content: "";
+  position: absolute;
+  width: 370px;
+  bottom: 0;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.80);
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 14px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+.thumb:nth-child(1)::after{
+  content: "Десктопні додатки";
+}
+.thumb:nth-child(2)::after{
+  content: "Мобільні додатки";
+}
+.thumb:nth-child(3)::after{
+  content: "Дизайнерські рішення ";
+}
+.thumb{
+  width: 370px;
+  height: 294px;
+}
+.thumb > img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 /* Секція Наша команда */
+.thumb-p{
+  width: 270px;
+  height: 260px;
+  margin-bottom: 30px;
+}
+.thumb-p > img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 .our-team {
   margin-bottom: 50px;
   font-weight: 700;
@@ -262,11 +308,6 @@ background: #F5F4FA;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-}
-.team img {
-  width: 270px;
-  height: 260px;
-  margin-bottom: 30px;
 }
 .team p {
   font-weight: 400;
