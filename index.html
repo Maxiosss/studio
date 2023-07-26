@@ -56,7 +56,50 @@
           <!--Blok hero-->
           <section class="hero">
             <h1 class="hero-title">Ефективні рішення для<br> вашого бізнесу</h1>
-            <button class="hero-btn" type="button">Замовити послугу</button>
+            <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
+                <div class="backdrop is-hidden" data-modal >
+        <form class="modal">
+                    <button type="button" class="modal-close" data-modal-close><svg class="icon-close-modal">
+            <use href="./img/icons/symbol-defs.svg#icon-close-modal"></use>
+          </svg></button>
+            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <ul class="modal-list">
+              <li class="modal-list-item">
+            <label class="modal-label"> Ім'я
+                <input type="text" class="modal-input" required>
+                <svg class="modal-icon">
+                  <use href="./img/icons/symbol-defs.svg#icon-person-modal"></use>
+                </svg>
+            </label>
+            </li>
+            <li class="modal-list-item">
+            <label class="modal-label"> Телефон
+                <input type="tel" class="modal-input" required>
+                <svg  class="modal-icon">
+                  <use href="./img/icons/symbol-defs.svg#icon-phone-modal"></use>
+                </svg>
+            </label>
+            </li>
+            <li class="modal-list-item">
+            <label class="modal-label"> Пошта
+                <input type="email" class="modal-input">
+                <svg class="modal-icon">
+                  <use href="./img/icons/symbol-defs.svg#icon-email-modal"></use>
+                </svg>
+            </label>
+            </li>
+            <li class="modal-list-item">
+            <label class="modal-label">Коментар
+                <textarea class="modal-textarea" cols="30" rows="10" placeholder="Введіть текст">
+
+                </textarea>
+              </label>
+            </li>
+                </ul>            
+            <p class="modal-text"><input type="checkbox" class="checkbox">Погоджуюся з розсилкою та приймаю <a href="#" class="modal-href">Умови договору</a></p>
+            <button type="submit" class="btn-submit">Відправити</button>
+        </form>
+    </div>
           </section>
 
           <!--Секція Переваги-->
@@ -446,8 +489,22 @@
                       </li>
                     </ul>
         </section>
+        <section class="telegram">
+          <form class="footer-form">
+            <label class="footer-label">Підпишіться на розсилку
+              <input class="footer-input" type="email" required placeholder="E-mail" >
+            </label>
+            <button type="submit" class="telegram-btn">
+              Підписатися
+              <svg class="telegram-icon">
+                <use href="./img/icons/symbol-defs.svg#icon-telegram-modal"></use>
+              </svg>
+            </button>
+          </form>
+        </section>
         </div>
       </footer>
     </div>
+                <script src="./js/modal.js"></script>
   </body>
 </html>
