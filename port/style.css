@@ -363,3 +363,36 @@ text-transform: uppercase;
   align-items: flex-end;
   margin-left: 93px;
 }
+/* overlay */
+.overlay:hover{
+width: 100%;
+height: 100%;
+ background-color: rgba(33, 150, 243, 0.90);
+ position: absolute;
+top: 0;
+cursor: pointer;
+}
+.overlay:hover .portfolio-hover-text{
+  opacity: 1;
+}
+.div-over:hover .overlay{
+  cursor: pointer;
+}
+.portfolio-hover-text{
+  color: #FFF;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; 
+letter-spacing: 0.54px;
+position: absolute;
+opacity: 0;
+top: 63px;
+bottom: 63px;
+left: 24px;
+right: 24px;
+}
+.thumb{
+  position: relative;
+}
