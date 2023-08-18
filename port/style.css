@@ -69,11 +69,30 @@ fill: rgba(117, 117, 117, 1);
   line-height: 1.15;
   letter-spacing: 0.02em;
 }
+.nav-list-item::after{
+  position: absolute;
+  top: 44px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+background-color: #2196F3;
+transform: scaleX(0);
+transition: transform 0.5s;
+  transform-origin: right;
+}
+.nav-list-item:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.nav-list-item{
+  position: relative;
+}
 .nav-list a {
   text-decoration: none;
   color: #212121;
 }
-
 .nav-list a:hover {
   color: #2196f3;
 }
@@ -87,9 +106,11 @@ fill: rgba(117, 117, 117, 1);
 }
 .contact:hover .icon-contact,.contact:focus .icon-contact{
   fill: #2196F3;
+  transition: fill 1s ease-in;
 }
 .contact:hover{
   color:#2196f3;
+  transition: color 250ms ease-in;
 } 
 .header-wrapper a:focus{
   color: #2196f3;
@@ -113,11 +134,13 @@ color: #212121;
 }
 .btn-s button:hover{
   background-color: #2196f3;
-  color:#FFFFFF
+  color:#FFFFFF;
+  transition: background-color 1s ease;
 }
 .btn-s button:focus{
   background-color: #2196f3;
   color: #FFFFFF;
+  transition: background-color 1s ease;
 }
 .btn-1 {
   width: 73px;
@@ -258,12 +281,15 @@ color: #757575;
 }
 .address-footer a:hover {
   color: #2196f3;
+  transition: color 500ms ease-out;
 }
 .address-footer a:focus{
   color: #2196f3;
+  transition: color 500ms ease-out;
 }
 .footer-wrapper a:focus{
   color: #2196f3;
+  transition: color 500ms ease-out;
 }
 .link-footer{
   width: 20px;
@@ -287,10 +313,12 @@ color: #757575;
 .link-li-footer:hover{
   border-radius: 50%;
   background-color: #2196F3;
+  transition: background-color 1s ease;
 }
 .link-li-footer:focus{
   border-radius: 50%;
   background-color: #2196F3;
+  transition: background-color 1s ease;
 }
 .footer-wrapper h2{
   color: #FFF;
@@ -371,12 +399,14 @@ height: 100%;
  position: absolute;
 top: 0;
 cursor: pointer;
+transition: background-color 1s ease;
 }
 .overlay:hover .portfolio-hover-text{
   opacity: 1;
 }
 .div-over:hover .overlay{
   cursor: pointer;
+  opacity: 1;
 }
 .portfolio-hover-text{
   color: #FFF;
@@ -384,7 +414,7 @@ font-family: Roboto;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
-line-height: 28px; 
+line-height: 1.55; 
 letter-spacing: 0.54px;
 position: absolute;
 opacity: 0;
