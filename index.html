@@ -13,6 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
@@ -20,7 +26,7 @@
       <header class="header">
         <div class="header-wrapper">   
               <div class="nav-menu">  
-                  <a class="logo-link" href="./index.html"
+                  <a class="logo-link animate__animated animate__bounce" href="./index.html"
                 ><span class="web">Web</span>Studio</a
               >
               <nav class="navigation">
@@ -55,7 +61,7 @@
         <div class="content">
           <!--Blok hero-->
           <section class="hero">
-            <h1 class="hero-title">Ефективні рішення для<br> вашого бізнесу</h1>
+            <h1 class="hero-title animate__animated animate__rubberBand">Ефективні рішення для<br> вашого бізнесу</h1>
             <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
                 <div class="backdrop is-hidden" data-modal >
         <form class="modal">
@@ -100,8 +106,8 @@
     </div>
           </section>
 
-          <!--Секція Переваги-->
-          <section class="perevagy">
+        <!--Секція Переваги--> 
+          <section class="perevagy" data-aos="flip-up" data-aos-duration="3000">
             <h2 class="visually-hidden">Perevagy</h2>
             <div class="features">
               <div class="features-icons-all">
@@ -160,7 +166,7 @@
           </section>
 
           <!--Секція Чим ми займаємося-->
-          <section class="works">
+          <section class="works" data-aos="zoom-in-up">
             <h2 class="our-skills">Чим ми займаємося</h2>
             <ul class="images">
               <li class="thumb">
@@ -176,7 +182,7 @@
           </section>
 
           <!--Секція Наша команда-->
-          <section class="us">
+          <section class="us" data-aos="fade-up">
               <h2 class="our-team">Наша команда</h2>
               <ul class="team">
                 <li class="card">
@@ -361,7 +367,7 @@
                 </li>
               </ul>
           </section>
-          <section class="regular-customers">
+          <section class="regular-customers" data-aos="fade-left" >
             <h2 class="customers-title">Постійні клієнти</h2>
             <ul class="customers">
             <li class="customers-list-item">
@@ -504,5 +510,7 @@
       </footer>
     </div>
                 <script src="./js/modal.js"></script>
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script>AOS.init();</script>
   </body>
 </html>

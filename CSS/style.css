@@ -370,7 +370,7 @@ background: #F5F4FA;
   height: 70px;
   background: rgba(47, 48, 58, 0.80);
   color: #FFF;
-  display: flex;
+  display: flex;                                                                                                                                                                                                                                                                                                   
   justify-content: center;
 align-items: center;
 text-align: center;
@@ -379,15 +379,6 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
-transform: scaleY(0);
-transition: transform 750ms ease;
-  transform-origin: right;
-  opacity: 0;
-}
-.thumb:nth-child(n):hover::after{
-  transform: scaleY(1);
-  transform-origin: left;
-  opacity: 1;
 }
 .thumb:nth-child(1)::after{
   content: "Десктопні додатки";
@@ -665,9 +656,6 @@ text-transform: uppercase;
   fill: #ffffff;
 }
 .telegram-btn{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -681,8 +669,11 @@ font-style: normal;
 font-weight: 700;
 line-height: 30px; 
 letter-spacing: 0.96px;
-padding-right: 28px;
-padding-left: 28px;
+/* padding-right: 28px;
+padding-left: 28px; */
+position: absolute;
+left: 370px;
+animation: back 5s linear 500ms infinite;
 }
 .footer-input{
   width: 358px;
@@ -713,7 +704,9 @@ text-transform: uppercase;
 .footer-form{
   display: flex;
   align-items: flex-end;
-  margin-left: 93px;
+  /* margin-left: 93px; */
+  position: relative;
+  left: 93px;
 }
 /* animation */
 .nav-list-item::after{
@@ -732,4 +725,15 @@ transition: transform 0.5s;
 .nav-list-item:hover::after{
   transform: scaleX(1);
   transform-origin: left;
+}
+@keyframes back{
+  0%{
+    background-color: red;
+  }
+  50%{
+    background-color: black;
+  }
+  100%{
+    background-color: #2196F3;
+  }
 }
