@@ -341,9 +341,6 @@ text-transform: uppercase;
   fill: #ffffff;
 }
 .telegram-btn{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -357,8 +354,11 @@ font-style: normal;
 font-weight: 700;
 line-height: 30px; 
 letter-spacing: 0.96px;
-padding-right: 28px;
-padding-left: 28px;
+/* padding-right: 28px;
+padding-left: 28px; */
+position: absolute;
+left: 370px;
+animation: back 5s linear 500ms infinite;
 }
 .footer-input{
   width: 358px;
@@ -389,7 +389,9 @@ text-transform: uppercase;
 .footer-form{
   display: flex;
   align-items: flex-end;
-  margin-left: 93px;
+  /* margin-left: 93px; */
+  position: relative;
+  left: 93px;
 }
 /* overlay */
 .overlay:hover{
@@ -425,4 +427,15 @@ right: 24px;
 }
 .thumb{
   position: relative;
+}
+@keyframes back{
+  0%{
+    background-color: red;
+  }
+  50%{
+    background-color: black;
+  }
+  100%{
+    background-color: #2196F3;
+  }
 }
